@@ -2,11 +2,15 @@
 
 <head>
     <title>Survey | All About You</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1 id="title">A Simple Survey</h1>
-    <p id="description">Thanks for sharing a little bit about yourself!</p>
+    <div id="before-form">
+        <h1 id="title">A Simple Survey</h1>
+        <p id="description">Thanks for sharing a little bit about yourself!</p>
+    </div>
+    
     <div id="form-wrapper">
         <form id="survey-form">
             <label for="name" id="name-label">Name</label><br>
@@ -16,7 +20,7 @@
             <input type="email" id="email" placeholder="Enter your email" required><br>
 
             <label for="number" id="number-label">Age (Optional)</label><br>
-            <input type="number" id="number" placeholder="Enter your age" min="1" max="150"><br>
+            <input type="number" id="number" placeholder="Age" min="1" max="150"><br>
 
             <label for="dropdown">What's your favorite color?</label><br>
             <select id="dropdown">
@@ -54,9 +58,9 @@
             <input type="checkbox" id="ham" name="ham" value="ham">
             <label for="ham"> Ham</label><br>
             
-            <textarea id="additional">Enter anything else about yourself here...</textarea><br>
+            <textarea id="additional">Enter anything else you would like to add about yourself...</textarea><br>
 
-            <button id="submit">Submit</button>
+            <div id="button-wrapper"><button id="submit">Submit</button></div>
         </form>
     </div>
 
