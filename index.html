@@ -1,8 +1,64 @@
 <!DOCTYPE html>
+
 <head>
-    <title>freeCodeCamp Survey</title>
+    <title>Survey | All About You</title>
 </head>
+
 <body>
+    <h1 id="title">A Simple Survey</h1>
+    <p id="description">Thanks for sharing a little bit about yourself!</p>
+    <div id="form-wrapper">
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+
+            <label for="number" id="number-label">Age (Optional)</label><br>
+            <input type="number" id="number" placeholder="Enter your age" min="1" max="150"><br>
+
+            <label for="dropdown">What's your favorite color?</label><br>
+            <select id="dropdown">
+                <option value="">--Select an Option--</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+                <option value=violet>Violet</option>
+            </select><br>
+
+            <p>What's the best pet?</p>
+            <input type="radio" id="cat" name="pet" value="cat">
+            <label for="cat"></label>Cat<br>
+            <input type="radio" id="dog" name="pet" value="dog">
+            <label for="dog"></label>Dog<br>
+            <input type="radio" id="other" name="pet" value="other">
+            <label for="other"></label>Other<br>
+
+            <p>What do you like on your pizza? (Check multiple if necessary)</p>
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+            <label for="pepperoni"> Pepperoni</label><br>
+            <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+            <label for="mushrooms"> Mushrooms</label><br>
+            <input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+            <label for="pineapple"> Pineapple</label><br>
+            <input type="checkbox" id="sausage" name="sausage" value="sausage">
+            <label for="sausage"> Sausage</label><br>
+            <input type="checkbox" id="peppers" name="peppers" value="peppers">
+            <label for="peppers"> Peppers</label><br>
+            <input type="checkbox" id="bacon" name="bacon" value="bacon">
+            <label for="bacon"> Bacon</label><br>
+            <input type="checkbox" id="ham" name="ham" value="ham">
+            <label for="ham"> Ham</label><br>
+            
+            <textarea id="additional">Enter anything else about yourself here...</textarea><br>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
